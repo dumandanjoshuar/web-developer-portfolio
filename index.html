@@ -19,7 +19,7 @@
   <title>Joshua's Portfolio</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light p-2 text-light fixed-top bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-light p-2 text-light fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <span class="text-warning">Joshua</span><span class="text-white">Dumandan</span>
@@ -48,7 +48,7 @@
   <!-- End of Nav -->
   
   <!-- About Section -->
-  <section class="container-fluid pb-5 mb-5" id="landing">
+  <section class="container-fluid pb-5 mb-5 " id="landing">
       <div div class="row align-items-center justify-content-center text-white">
         <div class="order-2 col-12 col-md-6 col-lg-7 col-xl-6 text-md-start text-sm-center text-xs-center">
           <h2><span class="text-warning">Joshua</span><span class="text-white">Dumandan</span></h2>
@@ -68,9 +68,9 @@
   <!-- end of about section -->
   
   <!-- Start of My Project -->
-  <section id="projects" class="pb-5">
-    <h2 class="text-center mb-5 pb-5"><span class="text-warning">Pro</span><span class="text-white">ject</span></h2>
-    <div class="container mx-auto">
+  <section id="projects" class="pb-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <h2 class="text-center my-4"><span class="text-warning">Pro</span><span class="text-white">ject</span></h2>
       <div class="row g-5 text-white mx-auto justify-content-center">
         <div class="col-12 col-md-6 col-lg-4 col-sm-10 offset-sm-2 offset-md-0">
           <div class="card">
@@ -111,36 +111,38 @@
   <!-- End of Project Section -->
   
   <!-- start of  Tools Section -->
-  <section class="text-white container-fluid pb-5" id="tools">
-    <h2 class="text-center mb-5 pb-5"><span class="text-warning">To</span><span class="text-white">ols</span></h2>
-    <div class="row text-center">
-      <div class="order-1 col-md-4 col-lg-4 col-sm-6 col-12">
-        <h3>Front End</h3>
-        <img src="images/logo-html5.png"/>
-        <img src="images/logo-css3.png"/>
-        <img src="images/logo-bootstrap.png"/>
-        <img src="images/logo-javascript.png"/>
+  <section class="text-white pb-5 d-flex flex-column justify-content-center align-items-center" id="tools">
+    <h2 class="text-center my-5"><span class="text-warning">To</span><span class="text-white">ols</span></h2>
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <div class="row text-center">
+        <div class="order-1 col-md-4 col-lg-4 col-sm-6 col-12">
+          <h3>Front End</h3>
+          <img src="images/logo-html5.png"/>
+          <img src="images/logo-css3.png"/>
+          <img src="images/logo-bootstrap.png"/>
+          <img src="images/logo-javascript.png"/>
+        </div>
+        <div class="order-2 col-md-4 col-lg-4 col-sm-6 col-12">
+          <h3>MERN</h3>
+          <img src="images/logo-mongodb.png"/>
+          <img src="images/logo-react.png"/>
+          <img src="images/logo-nodejs.png"/>
+          <img src="images/logo-expressjs.png"/>
+        </div>
+        <div class="order-3 col-md-4 col-lg-4 col-sm-6 offset-md-0 offset-sm-3 text-sm-center col-12">
+          <h3>Other Tools</h3>
+          <img src="images/logo-heroku.png"/>
+          <img src="images/logo-git.png"/>
+          <img src="images/logo-gitlab-ci-cd.png"/>
+          <img src="images/logo-postman.png"/>
+        </div>
       </div>
-      <div class="order-2 col-md-4 col-lg-4 col-sm-6 col-12">
-        <h3>MERN</h3>
-        <img src="images/logo-mongodb.png"/>
-        <img src="images/logo-react.png"/>
-        <img src="images/logo-nodejs.png"/>
-        <img src="images/logo-expressjs.png"/>
-      </div>
-      <div class="order-3 col-md-4 col-lg-4 col-sm-6 offset-md-0 offset-sm-3 text-sm-center col-12">
-        <h3>Other Tools</h3>
-        <img src="images/logo-heroku.png"/>
-        <img src="images/logo-git.png"/>
-        <img src="images/logo-gitlab-ci-cd.png"/>
-        <img src="images/logo-postman.png"/>
-      </div>
-    </div>
+    
   </section>
   <!-- End of Tools -->
   
   <!-- Start of Contact -->
-  <section class="mt-5 container-fluid" id="contact">
+  <section class="mt-5 container-fluid d-flex flex-column justify-content-center align-items-center" id="contact">
     <h2 class="text-center mb-5"><span class="text-warning">Cont</span><span class="text-white">act</span></h2>
     <div class="text-center pb-5">
       <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -151,13 +153,13 @@
     
     <!-- Map -->
     <div class="row">
-      <div class="order-1 text-center order-1 col-md-12 col-lg-6 col-sm-12 col-xm-12 pb-5">
+      <div class="order-1 text-center col-md-6 col-lg-6 col-sm-12 col-12 pb-5">
         <h3 class="text-white">Visit Us</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1930.6429278406429!2d120.97745657319454!3d14.58278052399105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srizal%20park!5e0!3m2!1sen!2sph!4v1695646078161!5m2!1sen!2sph" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       
       <!-- Form -->
-      <div class="order-2 text-center order-2 col-md-12 col-lg-6 col-sm-12 col-xm-12 pb-5">
+      <div class="order-2 text-center col-md-6 col-lg-6 col-sm-12 col-12 pb-5">
         <h3 class="text-white">Message Us</h3>
         <form class="bg-secondary p-3" id="form-col">
           <!-- Name -->
