@@ -80,6 +80,10 @@ a.btn {
   color: pink;
 }
 
+.card {
+  min-height: 100%;
+}
+
 
 
 #projects img {
