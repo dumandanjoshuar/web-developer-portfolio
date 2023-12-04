@@ -42,15 +42,63 @@ a.btn {
 
 /* landing */
 
+#landing {
+  min-height: 100vh;
+  background-image: url('/images/background-photo.jpg');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-
-#landing .my-paragraph {
-  max-width: 800px;
+@media (max-width: 768px) {
+  #landing {
+    background-size: contain;
+  }
 }
 
 .my-picture {
-  height: 300px;
-  width: 300px;
+  max-width: 20em;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.typewriter,
+.typewriter2 {
+  position: relative;
+}
+
+.typewriter h3,
+.typewriter2 h3 {
+  overflow: hidden;
+  border-right: .10em solid #dc3545;
+  white-space: nowrap;
+  width: 0;
+  animation: switchLines 8s steps(42, end) infinite;
+}
+
+.typewriter2 h3 {
+  animation-delay: 4s;
+}
+
+@keyframes switchLines {
+  0%, 25% { width: 0; opacity: 0; }
+  50%, 75% { width: 100%; opacity: 1; }
+  100% { width: 0; opacity: 0; }
+}
+
+/* Additional CSS to hide the second line initially */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#landing .bi {
+  font-size: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px ;
 }
 
 /* end of landing */
@@ -58,13 +106,24 @@ a.btn {
 
 /* project */
 
+#projects {
+  min-height: 100vh;
+  background: black;
+}
+
 #projects h5 {
+  color: #FFDB58;
   text-transform: uppercase;
   text-align: center;
 }
 
+#projects div img {
+  height: auto;
+  width: 100%;
+}
+
 #projects .card {
-  background-color: rgba(20, 152, 156, 0.5);
+  background-color: #404040;
   width: 18rem;
 }
 
@@ -83,8 +142,6 @@ a.btn {
 .card {
   min-height: 100%;
 }
-
-
 
 #projects img {
   max-width: 100%;
@@ -115,39 +172,8 @@ a.btn {
   height: 80%;
 }
 
-#contact div .bi {
-  font-size: 30px;
-}
 
 /* end of contact */
-
-/* additional */
-
-body {
-  background: linear-gradient(90deg, rgba(2,0,36,0.9) 0%, rgba(9,9,121,0.9) 20%, rgba(5,93,176,0.9) 80%, rgba(0,212,255,0.9) 100%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-section > h2 {
-  font-size: 2.5rem;
-}
-
-#landing {
-  min-height: 100vh;
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  border: 2px solid black;
-}
-
-
-#projects {
-  border: 2px solid black;
-  min-height: 100vh;
-}
 
 
 #tools {
